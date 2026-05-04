@@ -28,3 +28,15 @@ Cypress.Commands.add('login', (phone, password) => {
   cy.get('input[type="password"]').type(password)
   cy.contains('button', 'Login').click()
 })
+
+Cypress.Commands.add('addToCart', (productName) => {
+  cy.get('h3')
+    .filter((index, el) => {
+      return el.innerText.toLowerCase().includes(productName.toLowerCase())
+    })
+    .first()
+    .closest('.group')
+    .within(() => {
+      cy.get('button.btn-scale').click()
+    })
+})
