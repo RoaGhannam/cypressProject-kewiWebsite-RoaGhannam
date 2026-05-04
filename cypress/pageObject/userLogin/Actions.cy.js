@@ -1,5 +1,5 @@
 class LoginActions {
-  visitHome() {
+  visitToHomePage() {
     cy.visit('https://kewi.ps/')
   }
 

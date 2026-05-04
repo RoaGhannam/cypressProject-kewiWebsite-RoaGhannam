@@ -1,24 +1,33 @@
 class AddAnyProductToCartActions {
 
-  visitProductsPage() {
+  visitToHomePage() {
     cy.visit('https://kewi.ps/')
   }
 
-  openLogin() {
+  openLoginPage() {
     cy.get('svg.lucide-user').parent().click()
   }
 
-  login(phone, password) {
+  loginUsingPhoneNumbderAndPassword(phone, password) {
     cy.login(phone, password)
   }
 
-  clickOnAnyProduct() {
-    cy.contains('h3', 'Chanel wallet').click()
+  clickOnProductsLink() {
+    cy.contains('a', 'Products').click()
   }
 
-  clickAddToCart() {
+  clickOnKewiBags() {
+    cy.contains('span', 'Kéwi bags').click()
+  }
+
+  clickOnAnyProduct() {
+    cy.contains('h3', 'COACH TOTEBAG').click()
+  }
+
+  clickOnAddToCart() {
     cy.contains('button', 'Add to Cart').click()
   }
+
 }
 
 export default new AddAnyProductToCartActions()

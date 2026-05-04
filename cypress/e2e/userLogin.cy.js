@@ -5,7 +5,7 @@ import loginAssertions from '../pageObject/userLogin/Assertions.cy'
 describe('Login Test with valid and invalid credentials', () => {
 
   it('login with valid user', () => {
-    loginActions.visitHome()
+    loginActions.visitToHomePage()
     loginActions.openLogin()
     loginActions.login('0567705116', 'roa123')
 
@@ -13,7 +13,7 @@ describe('Login Test with valid and invalid credentials', () => {
   })
 
   it('login with invalid user', () => {
-    loginActions.visitHome()
+    loginActions.visitToHomePage()
     loginActions.openLogin()
     loginActions.login('0567705116', 'wrongpassword')
 
