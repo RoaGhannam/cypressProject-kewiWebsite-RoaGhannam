@@ -27,6 +27,33 @@ class checkoutProcessActions {
   clickOnAddToCart(productName) {
     cy.addToCart(productName)
   }
+  clickOnShoppingIcon() {
+    cy.get('svg.lucide-shopping-cart').parent('button').first().click()
+
+  }
+
+  clickOnCheckoutButton() {
+    cy.contains('button' , 'Checkout').click()
+  }
+
+  clickOnSelectRegion() {
+    cy.get('#region').select('West Bank')
+  }
+
+
+  selectSuitibleDeliveryType() {
+    cy.get('#deliveryType').select('Express')
+  }
+
+  selectOnPaymentMethod() {
+    cy.get('input[name="paymentMethod"][value="visa"]').check()
+  }
+
+  clickOnPlaceOrderButton() {
+    cy.contains('button', 'Place Order').click()
+  }
+
+
 
 
 }

@@ -13,15 +13,12 @@ describe('Ckeckout process', () => {
     actions.clickOnAddToCart('COACH TOTEBAG')
     actions.clickOnAddToCart('Lady Dior')
     actions.clickOnAddToCart('LV')
-    cy.get('svg.lucide-shopping-cart').parent('button').first().click()
-    cy.contains('button' , 'Checkout').click()
-    cy.get('#region').select('West Bank')
-    cy.get('#deliveryType').select('Express')
-    cy.get('input[name="paymentMethod"][value="visa"]').check()
-    cy.contains('button', 'Place Order').click()
-
-
-    
+    actions.clickOnShoppingIcon()
+    actions.clickOnCheckoutButton()
+    actions.clickOnSelectRegion()
+    actions.selectSuitibleDeliveryType()
+    actions.selectOnPaymentMethod()
+    actions.clickOnPlaceOrderButton()
     
   })
 })
