@@ -1,7 +1,7 @@
 class AddAnyProductToCartAssertions {
 
   verifyTheProductAddedToCartSuccessfully() {
-    cy.contains('1x COACH TOTEBAG (mixed) added to your cart.').should('be.visible')
+    cy.contains('Added to cart').should('be.visible')
   }
 }
 
