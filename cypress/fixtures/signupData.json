@@ -1,0 +1,12 @@
+[
+  {
+    "phone": "056879",
+    "isValid": false,
+    "description": "less than 10 digits so it is invalid phone"
+  },
+  {
+    "phone": "0599353522",
+    "isValid": true,
+    "description": "10 digits so it valid phone"
+  }
+]
