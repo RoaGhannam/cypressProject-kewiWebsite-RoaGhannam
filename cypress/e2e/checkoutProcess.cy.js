@@ -7,7 +7,7 @@ describe('Ckeckout process', () => {
 
     actions.visitToHomePage()
     actions.openLoginPage()
-    actions.loginUsingPhoneNumbderAndPassword('0567705116', 'roa123')
+    actions.loginUsingPhoneNumbderAndPassword('0567705117', 'roa123')
     actions.clickOnProductsLink()
     actions.clickOnKewiBags()
     actions.clickOnAddToCart('COACH TOTEBAG')

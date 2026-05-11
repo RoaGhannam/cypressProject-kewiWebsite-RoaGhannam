@@ -35,7 +35,6 @@ class deleteProductActions {
       .click()
   }
 
-  // ✅ حذف كل المنتجات (بسيط باستخدام each)
   deleteAllItems() {
     cy.get('svg.lucide-trash2')
       .each(($el) => {

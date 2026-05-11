@@ -15,7 +15,7 @@ describe('Login Test with valid and invalid credentials', () => {
   it('login with invalid user', () => {
     loginActions.visitToHomePage()
     loginActions.openLogin()
-    loginActions.login('0567705117', 'wrongpassword')
+    loginActions.login('056775117', 'wrongpassword')
 
     loginAssertions.shouldShowError()
   })

@@ -6,7 +6,7 @@ describe('Visiting category', () => {
   it('Validate that the user can visit Kéwi wallets category', () => {
     actions.visitToHomePage()
     actions.openLoginPage()
-    actions.loginUsingPhoneNumbderAndPassword('0567705116', 'roa123')
+    actions.loginUsingPhoneNumbderAndPassword('0567705117', 'roa123')
     actions.clickOnProductsLink()
     actions.clickOnKewiWallets()
     assertions.verifyCanVisitKewiWalletSuccessfully()
@@ -15,7 +15,7 @@ describe('Visiting category', () => {
   it('Validate that the user can visit Kéwi perfume', () => {
     actions.visitToHomePage()
     actions.openLoginPage()
-    actions.loginUsingPhoneNumbderAndPassword('0567705116', 'roa123')
+    actions.loginUsingPhoneNumbderAndPassword('0567705117', 'roa123')
     actions.clickOnProductsLink()
     actions.clickOnKewiPerfume()
     assertions.verifyCanVisitKewiPerfumeSuccessfully()
@@ -24,7 +24,7 @@ describe('Visiting category', () => {
   it('Validate that the user can visit Kéwi accessories', () => {
     actions.visitToHomePage()
     actions.openLoginPage()
-    actions.loginUsingPhoneNumbderAndPassword('0567705116', 'roa123')
+    actions.loginUsingPhoneNumbderAndPassword('0567705117', 'roa123')
     actions.clickOnProductsLink()
     actions.clickOnKewiAccessories()
     assertions.verifyCanVisitKewiAccessoriesSuccessfully()
