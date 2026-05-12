@@ -1,92 +1,106 @@
-# Cypress E2E Testing Project
+# Cypress E2E Testing Project – Kewi Website
 
-## Project Description
-This project contains End-to-End (E2E) tests for the Kewi website using Cypress.
+## 📌 Project Overview
 
-It covers main user flows such as authentication, product browsing, cart actions, and API testing.
+This project is an individual Cypress testing task for the website:
+https://kewi.ps
 
----
-
-## How to Run the Project
-
-1. Clone the repository:
-git clone <https://github.com/RoaGhannam/cypressProject-kewiWebsite-RoaGhannam.git>
-
-2. Install dependencies:
-npm install
-
-3. Open Cypress:
-npx cypress open
-
-OR run tests in headless mode:
-npx cypress run
+The goal of this project is to build a complete end-to-end (E2E) test suite for a real e-commerce website and apply intermediate Cypress concepts such as reusable code, structured tests, data-driven testing, and API testing.
 
 ---
 
-## Test Scenarios Covered
+## 🎯 What I Implemented
 
-### Authentication
-- Login with valid credentials
-- Login with invalid credentials
-
-### Products
-- Open product categories
-- View products
-
-### Cart
-- Add product to cart
-- Delete product from cart
-- Empty cart
-
-### Data-Driven Testing
-- Sign Up using fixture (signupData.json)
-- Multiple test cases (valid & invalid data)
-
-### API Testing
-- Inspect API calls using cy.intercept
-- Mock API responses using fixtures:
-  - products
-  - categories
-  - empty products
-  - sold out products
+### 🏠 1. Homepage Testing
+- Visited the homepage
+- Verified that key sections are displayed:
+  - Banners
+  - Categories
+  - Featured products
 
 ---
 
-## Project Structure
-
-cypress/
- ├── e2e/
- │   ├── dataTest.cy.js
- │   ├── deleteProduct.cy.js
- │   ├── openProductCategories.cy.js
- │   ├── testAPI.cy.js
- │   ├── userLogin.cy.js
- │   └── visitToHomePage.cy.js
- │
- ├── fixtures/
- │   ├── products.json
- │   ├── categories.json
- │   ├── emptyProducts.json
- │   ├── soldoutProduct.json
- │   └── signupData.json
- │
- ├── pageObject/
- ├── support/
+### 🛍️ 2. Product Browsing
+- Navigated to the "Products" page
+- Opened a specific category (e.g., Kéwi bags)
+- Opened a product details page
 
 ---
 
-## Tools & Technologies
+### 🛒 3. Cart Functionality
+- Added a product to the cart
+- Opened the cart
+- Deleted a product from the cart
+- Verified empty cart scenario
+
+---
+
+### 🔐 4. Login Testing
+- Tested login with valid credentials → successful login
+- Tested login with invalid credentials → error handling
+
+---
+
+### 🧪 5. Project Structure (POM)
+- Used Page Object Model (POM)
+- Separated:
+  - Actions
+  - Assertions
+- Organized tests into reusable modules
+
+---
+
+### ⚙️ 6. Custom Commands
+- Created custom commands (e.g., login, add to cart)
+- Improved code reusability and readability
+
+---
+
+### 📊 7. Data-Driven Testing
+- Used fixtures (`signupData.json`)
+- Tested multiple cases (valid & invalid inputs)
+- Implemented one data-driven test
+
+---
+
+### 🔌 8. API Testing (cy.intercept)
+- Used `cy.intercept` to:
+  - Inspect API requests
+  - Mock API responses
+- Tested scenarios like:
+  - Products list
+  - Categories
+  - Empty data
+  - Sold-out products
+
+---
+
+### 🚀 9. CI/CD (GitHub Actions)
+- Configured GitHub Actions workflow
+- Tests run automatically on push
+- Ensured continuous testing
+
+---
+
+## 🧰 Tools Used
 
 - Cypress
 - JavaScript
 - Page Object Model (POM)
 - Fixtures
-- GitHub Actions (CI)
+- cy.intercept (API testing)
+- GitHub Actions
 
 ---
 
-## Notes
+## ✅ Conclusion
 
-- Data-driven testing is implemented using fixtures
-- API mocking is done using cy.intercept
-- Tests are organized using Page Object Model
+In this project, I implemented a complete Cypress testing solution that includes UI testing, API testing, and data-driven testing.
+
+The tests are structured, reusable, and maintainable, following best practices.
+
+## 🎥 Project Demo
+
+A full walkthrough of the project, including code explanation and test execution:
+
+▶️ 
